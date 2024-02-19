@@ -2,7 +2,6 @@
 const npmPackages = require("./src/utils/npmPackages");
 const env = require("./src/config/env");
 const logger = require("./src/logging/index");
-const compression = require("./src/utils/npmPackages");
 require("./src/models/associations/associations");
 require("./src/config/i18next-config"); // Configure i18next
 
@@ -19,6 +18,7 @@ const {
   i18nextMiddleware,
   i18next,
   compression,
+  cors,
 } = npmPackages;
 
 // errors Handler/utils import
