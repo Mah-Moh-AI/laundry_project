@@ -4,3 +4,5 @@ node_modules/
 /.eslintrc
 /package-lock.json
 .cache/
+.vscode/
+/launch.json

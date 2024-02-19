@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const winston = require("winston");
-const { Sequelize } = require("sequelize");
+const { Sequelize, Model } = require("sequelize");
 const dotenv = require("dotenv");
 const mysql = require("mysql2");
 const morgan = require("morgan");
@@ -15,6 +15,20 @@ const xss = require("xss-clean");
 const hpp = require("hpp");
 const path = require("path");
 const cookieParser = require("cookie-parser");
+const fs = require("fs");
+const process = require("process");
+const bcrypt = require("bcrypt");
+const crypto = require("crypto");
+const twilio = require("twilio");
+const nodemailer = require("nodemailer");
+const { promisify } = require("util");
+const axios = require("axios");
+const NodeCache = require("node-cache");
+const redis = require("redis");
+const PDFDocument = require("pdfkit");
+const i18next = require("i18next");
+const i18nextMiddleware = require("i18next-express-middleware");
+const compression = require("compression");
 
 class NpmPackages {
   constructor(options = {}) {
@@ -31,6 +45,20 @@ class NpmPackages {
     this.path = path;
     this.cookieParser = cookieParser;
     this.morgan = morgan;
+    this.fs = fs;
+    this.process = process;
+    this.bcrypt = bcrypt;
+    this.crypto = crypto;
+    this.nodemailer = nodemailer;
+    this.promisify = promisify;
+    this.Model = Model;
+    this.axios = axios;
+    this.NodeCache = NodeCache;
+    this.redis = redis;
+    this.PDFDocument = PDFDocument;
+    this.i18next = i18next;
+    this.i18nextMiddleware = i18nextMiddleware;
+    this.compression = compression;
   }
 
   get Sequelize() {
@@ -47,6 +75,10 @@ class NpmPackages {
 
   get DailyRotateFile() {
     return DailyRotateFile;
+  }
+
+  get twilio() {
+    return twilio;
   }
 }
 

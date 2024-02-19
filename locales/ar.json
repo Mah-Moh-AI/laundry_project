@@ -1,0 +1,7 @@
+{
+    "welcome": "مرحبًا بك في تطبيقنا!",
+    "error": {
+      "notFound": "غير موجود",
+      "internalServerError": "خطأ في الخادم الداخلي"
+    }
+  }

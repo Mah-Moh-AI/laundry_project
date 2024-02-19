@@ -1,0 +1,12 @@
+{
+    "welcome": "Welcome to our app!",
+    "error": {
+      "notFound": "Not found",
+      "internalServerError": "Internal Server Error"
+    },
+    "status": {
+      "success": "success",
+      "error": "error",
+      "fail": "fail"
+    }
+  }
