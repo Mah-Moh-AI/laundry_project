@@ -1,7 +1,7 @@
-const npmPackages = require("../utils/npmPackages");
-
-// npm
-const env = npmPackages.env;
+const { NODE_ENV } = require("../config/env");
+const sequelizeErrorHandler = require("./sequelizeErrorHandler");
+const { handleJWTError, handleJWTExpiredError } = require("./jwtErrorHandler");
+const logger = require("../logging/index");
 
 // Note: Sequelize Error Handler Not implemented yet
 
@@ -29,7 +29,7 @@ const sendErrorProd = (err, req, res) => {
     }
     // B) Programming or other unknown error: don't leak error details
     // 1) Log error
-    console.error("ERROR 💥", err);
+    logger.error("ERROR 💥", err);
     // 2) Send generic message
     return res.status(500).json({
       status: "error",
@@ -39,14 +39,26 @@ const sendErrorProd = (err, req, res) => {
 };
 
 module.exports = (err, req, res, next) => {
-  // console.log(err.stack);
-
   err.statusCode = err.statusCode || 500;
   err.status = err.status || "error";
 
-  if (env.NODE_ENV === "development") {
+  if (NODE_ENV === "development") {
     sendErrorDev(err, req, res);
-  } else if (env.NODE_ENV === "production") {
+  } else if (NODE_ENV === "production") {
+    // check if below line is required
+    // let error = { ...err, message: err.message, name: err.name };
+    if (err.name === "SequelizeUniqueConstraintError") {
+      err = sequelizeErrorHandler.handleDuplicateFieldsDB(err);
+    }
+    if (err.name === "SequelizeValidationError") {
+      err = sequelizeErrorHandler.handleValidationErrorDB(err);
+    }
+    if (err.name === "SequelizeForeignKeyConstraintError") {
+      err = sequelizeErrorHandler.handleFKConstraintError(err);
+    }
+    if (err.name === "JsonWebTokenError") err = handleJWTError();
+    if (err.name === "TokenExpiredError") err = handleJWTExpiredError();
+
     sendErrorProd(err, req, res);
   }
 };

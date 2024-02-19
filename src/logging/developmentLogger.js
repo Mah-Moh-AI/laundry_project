@@ -9,8 +9,8 @@ const logger = require("./logger");
 logger.add(
   new transports.Console({
     format: combine(
-      format.colorize(),
       format.errors({ stack: true }),
+      format.colorize(),
       format.simple()
     ),
     level: "debug",

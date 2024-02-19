@@ -5,11 +5,11 @@ const logger = require("./src/logging/index");
 const sequelize = require("./src/config/database");
 
 // uncaught Exception handling
-// process.on("uncaughtException", (err) => {
-//   logger.info("UNCAUGHT EXCEPTION! 💥 Shutting down...");
-//   logger.error(err.name, err.message);
-//   process.exit(1);
-// });
+process.on("uncaughtException", (err) => {
+  logger.info("UNCAUGHT EXCEPTION! 💥 Shutting down...");
+  logger.error(err.name, err.message);
+  process.exit(1);
+});
 
 // call express file
 const app = require("./app");
