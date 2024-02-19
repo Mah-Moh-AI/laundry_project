@@ -35,7 +35,7 @@ class NpmPackages {
     this.express = express;
     // this.express.use(bodyParser.json()); // express.json middleware is used in app.js file
     // this.express.use(cors(options.corsOptions)); // shall be moved to app.js in case needed
-
+    this.cors = cors;
     this.jwt = jwt;
     this.winston = winston;
     this.helmet = helmet;
