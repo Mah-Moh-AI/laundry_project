@@ -4343,3 +4343,109 @@
 2024-02-19 22:48:37 [INFO]: Invoice table created (if not exists) successfully
 2024-02-19 22:48:37 [INFO]: InvoiceItem table created (if not exists) successfully
 2024-02-19 22:48:37 [INFO]: ClothesType History Database synchronized
+2024-02-19 22:48:57 [INFO]: App running on port 3000...
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT 1+1 AS result
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ClientHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'BranchHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: Connection to database has been established successfully.
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'UserHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'OperatorHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Operators' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ServiceHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): DROP TABLE IF EXISTS `ClothesTypeHistories`;
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ServicePreferenceHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ServiceOptionHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryTypeHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ItemServiceHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'OrderHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'LocationHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryRoutingHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryPointHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryWorkerHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'InvoiceHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'InvoiceItemHistories' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Users' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Clients' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Branches' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryTypes' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ServiceOptions' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ServicePreferences' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ClothesTypes' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Services' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'ItemServices' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Orders' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Locations' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryRoutings' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryPoints' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'DeliveryWorkers' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Invoices' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'InvoiceItems' AND TABLE_SCHEMA = 'laundry_project_db'
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ClientHistories`
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `BranchHistories`
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `UserHistories`
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `OperatorHistories`
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Operators`
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ServiceHistories`
+2024-02-19 22:48:57 [INFO]: Client History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ServicePreferenceHistories`
+2024-02-19 22:48:57 [INFO]: Branch History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ServiceOptionHistories`
+2024-02-19 22:48:57 [INFO]: User History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryTypeHistories`
+2024-02-19 22:48:57 [INFO]: Operator History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ItemServiceHistories`
+2024-02-19 22:48:57 [INFO]: Operator table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `OrderHistories`
+2024-02-19 22:48:57 [INFO]: Service History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): CREATE TABLE IF NOT EXISTS `ClothesTypeHistories` (`id` INTEGER NOT NULL auto_increment , `clothesTypeId` CHAR(36) BINARY NOT NULL, `action` VARCHAR(255) NOT NULL, `changes` JSON, `previousData` JSON, `timestamp` DATETIME NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2024-02-19 22:48:57 [INFO]: ServicePreference History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `InvoiceHistories`
+2024-02-19 22:48:57 [INFO]: ServiceOption History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `LocationHistories`
+2024-02-19 22:48:57 [INFO]: DeliveryType History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryRoutingHistories`
+2024-02-19 22:48:57 [INFO]: ItemService History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryPointHistories`
+2024-02-19 22:48:57 [INFO]: Order History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryWorkerHistories`
+2024-02-19 22:48:57 [INFO]: Invoice History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `InvoiceItemHistories`
+2024-02-19 22:48:57 [INFO]: Location History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Users`
+2024-02-19 22:48:57 [INFO]: DeliveryRouting History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Clients`
+2024-02-19 22:48:57 [INFO]: DeliveryPoint History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Branches`
+2024-02-19 22:48:57 [INFO]: DeliveryWorker History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryTypes`
+2024-02-19 22:48:57 [INFO]: InvoiceItem History Database synchronized
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ServiceOptions`
+2024-02-19 22:48:57 [INFO]: User table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ServicePreferences`
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ClothesTypes`
+2024-02-19 22:48:57 [INFO]: Client table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Services`
+2024-02-19 22:48:57 [INFO]: Branch table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ItemServices`
+2024-02-19 22:48:57 [INFO]: DeliveryType table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Orders`
+2024-02-19 22:48:57 [INFO]: ServiceOption table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Locations`
+2024-02-19 22:48:57 [INFO]: ServicePreference table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryRoutings`
+2024-02-19 22:48:57 [INFO]: ClothesType table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryPoints`
+2024-02-19 22:48:57 [INFO]: Service table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `DeliveryWorkers`
+2024-02-19 22:48:57 [INFO]: ItemService table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `Invoices`
+2024-02-19 22:48:57 [INFO]: Order table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `InvoiceItems`
+2024-02-19 22:48:57 [INFO]: Location table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: SQL Query: Executing (default): SHOW INDEX FROM `ClothesTypeHistories`
+2024-02-19 22:48:57 [INFO]: DeliveryRouting table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: DeliveryPoint table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: DeliveryWorker table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: Invoice table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: InvoiceItem table created (if not exists) successfully
+2024-02-19 22:48:57 [INFO]: ClothesType History Database synchronized
