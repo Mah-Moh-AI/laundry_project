@@ -70,16 +70,15 @@ app.use(helmet());
 // Development logging
 if (env.NODE_ENV === "development") {
   app.use(morgan("dev"));
+
+  app.use(
+    morgan("tiny", {
+      stream: {
+        write: (message) => logger.http(message.trim()),
+      },
+    })
+  );
 }
-
-app.use(
-  morgan("tiny", {
-    stream: {
-      write: (message) => logger.http(message.trim()),
-    },
-  })
-);
-
 // Limit requests from same API
 const limiter = rateLimit({
   max: 100,
