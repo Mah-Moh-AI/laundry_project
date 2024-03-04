@@ -36,6 +36,7 @@
     "i18next": "^23.9.0",
     "i18next-express-middleware": "^2.0.0",
     "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
     "mysql2": "^3.6.5",
     "node-cache": "^5.1.2",
     "nodemailer": "^6.9.8",
@@ -53,7 +54,6 @@
     "xss-clean": "^0.1.4"
   },
   "devDependencies": {
-    "morgan": "^1.10.0",
     "nodemon": "^3.0.2"
   },
   "engine": {
