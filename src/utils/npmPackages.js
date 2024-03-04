@@ -7,7 +7,7 @@ const winston = require("winston");
 const { Sequelize, Model } = require("sequelize");
 const dotenv = require("dotenv");
 const mysql = require("mysql2");
-const morgan = require("morgan");
+// const morgan = require("morgan");
 const DailyRotateFile = require("winston-daily-rotate-file");
 const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
@@ -44,7 +44,7 @@ class NpmPackages {
     this.hpp = hpp;
     this.path = path;
     this.cookieParser = cookieParser;
-    this.morgan = morgan;
+    // this.morgan = morgan;
     this.fs = fs;
     this.process = process;
     this.bcrypt = bcrypt;
