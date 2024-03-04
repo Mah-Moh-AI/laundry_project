@@ -3,6 +3,7 @@ const { DataTypes } = Sequelize;
 const sequelize = require("../config/database");
 const OperatorHistory = require("./operatorHistoryModel");
 const logger = require("../logging/index");
+const AppError = require("../utils/appError");
 
 const Operator = sequelize.define(
   "Operator",
