@@ -14,7 +14,7 @@ const {
   hpp,
   path,
   cookieParser,
-  // morgan,
+  morgan,
   i18nextMiddleware,
   i18next,
   compression,
@@ -109,6 +109,10 @@ app.use(
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
   next();
+});
+
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Hello, world!" });
 });
 
 app.use("/api/v1/users", userRouter);

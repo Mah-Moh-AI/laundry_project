@@ -47,7 +47,6 @@ class APIFeatures {
     const featureLimit = limit && !isNaN(limit) ? limit * 1 : 10;
     const startIndex = page && !isNaN(page) ? (page - 1) * featureLimit : 0;
     // const endIndex = page * limit;
-    console.log(sortBy);
     this.query = {
       where: updatedFilters,
       order: sortBy,
@@ -58,5 +57,4 @@ class APIFeatures {
     return this;
   }
 }
-
 module.exports = APIFeatures;

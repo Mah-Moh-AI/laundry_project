@@ -5,6 +5,7 @@ const APIFeatures = require("../utils/apiFeatures");
 class ServiceService {
   async getAllServices(queryString) {
     const features = new APIFeatures(queryString).features();
+
     return await serviceRepository.getAllServices(features.query);
   }
 
